@@ -12,6 +12,12 @@ app.use(express.json());
 const rootRoute = require("./routes/companies");
 app.use("/companies", rootRoute);
 
+const rooty = require("./routes/invoices");
+app.use("/invoices", rooty);
+
+const biz = require("./routes/industries");
+app.use("/industries", biz);
+
 
 /** 404 handler */
 
